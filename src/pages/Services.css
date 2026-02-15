@@ -1,0 +1,130 @@
+.services-page {
+    min-height: 100vh;
+    padding-top: 100px;
+}
+
+.services-hero {
+    padding: var(--spacing-2xl) 0;
+    text-align: center;
+}
+
+.services-header {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===================================
+   SERVICES GRID
+   =================================== */
+
+.services-grid-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.service-card {
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-base);
+}
+
+.service-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-md);
+    color: white;
+}
+
+.service-title {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text-primary);
+}
+
+.service-description {
+    font-size: var(--text-base);
+    color: var(--color-text-secondary);
+    margin-bottom: var(--spacing-md);
+    line-height: 1.7;
+}
+
+.service-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+.service-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--text-sm);
+    color: var(--color-text-secondary);
+}
+
+.service-features li svg {
+    flex-shrink: 0;
+    color: var(--color-text-accent);
+}
+
+/* ===================================
+   CTA SECTION
+   =================================== */
+
+.services-cta {
+    padding: var(--spacing-2xl) 0 var(--spacing-3xl);
+}
+
+.cta-card {
+    text-align: center;
+    padding: var(--spacing-2xl);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cta-card h2 {
+    margin-bottom: var(--spacing-md);
+}
+
+.cta-card p {
+    font-size: var(--text-lg);
+    margin-bottom: var(--spacing-xl);
+    color: var(--color-text-secondary);
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+   =================================== */
+
+@media (max-width: 768px) {
+    .services-page {
+        padding-top: 80px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
+    }
+
+    .service-card {
+        padding: var(--spacing-lg);
+    }
+
+    .cta-card {
+        padding: var(--spacing-lg);
+    }
+}
