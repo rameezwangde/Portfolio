@@ -108,7 +108,7 @@ const Home = () => {
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
                             <div className="stat-item">
-                                <h3 className="stat-number">2+</h3>
+                                <h3 className="stat-number">2</h3>
                                 <p className="stat-label">Projects Delivered</p>
                             </div>
                             <div className="stat-divider"></div>
